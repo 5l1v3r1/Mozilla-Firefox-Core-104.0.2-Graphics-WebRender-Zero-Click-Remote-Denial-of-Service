@@ -1,8 +1,7 @@
 # Mozilla-Firefox-Core-104.0.2-Graphics-WebRender-Zero-Click-Remote-Denial-of-Service
 #The attacker can do a successful Denial of Service by sending a link to the target and without the target clicking on a specific link. #crash from PWebRenderBridgeChild::SendSetDisplayList while loading a PDF
 
-<video src="https://github.com/APTIRAN/Mozilla-Firefox-Core-104.0.2-Graphics-WebRender-Zero-Click-Remote-Denial-of-Service/blob/main/GIF/POC.gif?raw=true" controls="controls" style="max-width: 730px;">
-</video>
+![alt text](https://github.com/APTIRAN/Mozilla-Firefox-Core-104.0.2-Graphics-WebRender-Zero-Click-Remote-Denial-of-Service/blob/main/GIF/POC.gif)
 
 <code>
 xul.dll!mozilla::ipc::PortLink::SendMessage(mozilla::UniquePtr<IPC::Message,mozilla::DefaultDelete<IPC::Message>> aMessage) Line 95	C++
