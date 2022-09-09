@@ -1,7 +1,7 @@
 # Mozilla-Firefox-Core-104.0.2-Graphics-WebRender-Zero-Click-Remote-Denial-of-Service
 #The attacker can do a successful Denial of Service by sending a link to the target and without the target clicking on a specific link. #crash from PWebRenderBridgeChild::SendSetDisplayList while loading a PDF
 
-
+<code>
 xul.dll!mozilla::ipc::PortLink::SendMessage(mozilla::UniquePtr<IPC::Message,mozilla::DefaultDelete<IPC::Message>> aMessage) Line 95	C++
  	xul.dll!mozilla::ipc::MessageChannel::SendMessageToLink(mozilla::UniquePtr<IPC::Message,mozilla::DefaultDelete<IPC::Message>> aMsg) Line 783	C++
  	xul.dll!mozilla::ipc::MessageChannel::Send(mozilla::UniquePtr<IPC::Message,mozilla::DefaultDelete<IPC::Message>> aMsg) Line 772	C++
@@ -46,5 +46,5 @@ xul.dll!mozilla::ipc::PortLink::SendMessage(mozilla::UniquePtr<IPC::Message,mozi
  	[Inline Frame] firefox.exe!do_main(int argc, char * * argv, char * * envp) Line 227	C++
  	firefox.exe!NS_internal_main(int argc, char * * argv, char * * envp) Line 406	C++
  	firefox.exe!wmain(int argc, wchar_t * * argv) Line 167	C++
-
+</code>
 
